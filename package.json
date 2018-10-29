@@ -1,25 +1,31 @@
 {
   "name": "draft-server",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "react": "^16.6.0",
-    "react-dom": "^16.6.0",
-    "react-scripts": "2.0.5"
-  },
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Peter Hayes <peter.k.hayes@gmail.com>",
+  "license": "MIT",
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "client": "cd client && yarn start",
+    "server": "flow-remove-types ./src -d ./lib && node lib/index.js"
   },
-  "eslintConfig": {
-    "extends": "react-app"
+  "devDependencies": {
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.8.0",
+    "eslint-config-prettier": "^3.1.0",
+    "eslint-plugin-flowtype": "^3.1.4",
+    "eslint-plugin-prettier": "^3.0.0",
+    "eslint-plugin-react": "^7.11.1",
+    "flow-bin": "^0.84.0",
+    "flow-remove-types": "^1.2.3",
+    "flow-typed": "^2.5.1",
+    "nodemon": "^1.18.5",
+    "prettier": "^1.14.3"
   },
-  "browserslist": [
-    ">0.2%",
-    "not dead",
-    "not ie <= 11",
-    "not op_mini all"
-  ]
+  "dependencies": {
+    "koa": "^2.6.1",
+    "koa-bodyparser": "^4.2.1",
+    "koa-logger": "^3.2.0",
+    "koa-router": "^7.4.0",
+    "lodash": "^4.17.11"
+  }
 }
