@@ -1,0 +1,6 @@
+* Show who we're waiting on
+* filters by card type and color
+* show greyed out cards that have been picked
+* alert when it becomes ready (notification? desktop notification?)
+* local storage for picks
+* one list with selection and drag/drop
